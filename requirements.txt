@@ -1,0 +1,17 @@
+# --- Core (required to run the app) ---
+streamlit>=1.32
+numpy
+scipy
+pandas
+plotly
+scikit-learn
+
+# --- Optional (enable extra sections / better quality) ---
+# xgboost          -> stronger ECG classifier (auto-used if installed, else RandomForest)
+# shap             -> quantitative feature-attribution charts in Explainable AI section
+# faster-whisper   -> speech-to-text for the Voice Assistant section
+# pyttsx3          -> fully offline text-to-speech
+# edge-tts         -> higher quality, online text-to-speech (fallback if pyttsx3 absent)
+# wfdb             -> load real MIT-BIH / PTB / PhysioNet records instead of synthetic ones
+# reportlab        -> export Weekly Progress Report as a real PDF (else falls back to Markdown)
+# requests         -> talk to a local Ollama server for the AI Health Chatbot section
