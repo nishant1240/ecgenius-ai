@@ -1,0 +1,15 @@
+# --- Core ---
+streamlit>=1.32
+numpy
+scipy
+pandas
+plotly
+scikit-learn
+
+# --- Voice + chatbot (needed for the deployed app) ---
+streamlit-mic-recorder   # in-browser microphone + speech-to-text
+gTTS                     # text-to-speech that works on Streamlit Cloud (English + Hindi)
+anthropic                # cloud LLM for the chatbot
+
+# --- Optional ---
+# xgboost, shap, wfdb, reportlab
